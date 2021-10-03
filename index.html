@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>house design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="banner">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1>G|life</h1>
+                    <h2>-Furniture-</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <!-- <li><a href="">about us</a></li> -->
+                    <li><a href="servics.html">servics</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <div class="custom-box">
+                <h2>For Custom Design</h2>
+                <button>Custom</button>
+                <button>Designs</button>
+            </div>
+        </div>
+        <div class="shop-sets">
+            <h3 class="shop-h3">Shop our sets</h3>
+            <div class="shop-section">
+                <div class="img-1 sec"></div>
+                <a href="#">
+                    <h3>Bedroom</h3>
+                </a>
+                <div class="img-2 sec"></div>
+                <a href="#">
+                    <h3>Dinging</h3>
+                </a>
+                <div class="img-3 sec"></div>
+                <a href="#">
+                    <h3>Backyard</h3>
+                </a>
+                <div class="img-4 sec"></div>
+                <a href="#">
+                    <h3>Kitchen</h3>
+                </a>
+                <div class="img-5 sec"></div>
+                <a href="#">
+                    <h3>Livingroom</h3>
+                </a>
+            </div>
+        </div>
+        <div class="shop-items">
+            <h3 class="itm-h3">Shop by Item</h3>
+            <div class="items-area">
+                <div class="img--1 itm">
+                    <a href="#"><img src="./css/imgs/images.jpeg" alt="chairs"></a>
+                </div>
+                <h3>Chairs</h3>
+                <div class="img--2 itm">
+                    <a href="#"><img src="./css/imgs/sofa-bed_jpg.webp" alt="sofa-bed"></a>
+                </div>
+                <h3>Beds</h3>
+                <div class="img--4 itm">
+                    <a href="#"><img src="./css/imgs/download.jfif" alt=""></a>
+                </div>
+                <h3>Couches</h3>
+                <div class="img--5 itm">
+                    <a href="#"><img src="./css/imgs/table.jfif" alt=""></a>
+                </div>
+                <h3>table</h3>
+                <div class="img--3 itm">
+                    <a href="#"><img src="./css/imgs/wardrobe.webp" alt="wardrobe"></a>
+                </div>
+                <h3>Wardrobe</h3>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navlinks = document.querySelector('.nav-links li');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+            });
+            navlinks.forEach((link, index) => {
+                link.style.animation = 'navLinkfade 0.5s ease forwards ${index / 7 + 0.3}s';
+            });
+        }
+        navSlide();
+    </script>
+</body>
+
+</html>
